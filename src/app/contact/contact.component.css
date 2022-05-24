@@ -1,0 +1,21 @@
+h1{
+    color: black;
+    font-weight: bolder;
+}
+input.ng-invalid{
+    border-left: 10px solid red;
+}
+input.ng-valid{
+    border-left: 10px solid green;
+}
+.error{
+    color: red;
+}
+.button{
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}

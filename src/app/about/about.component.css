@@ -1,0 +1,22 @@
+.banner
+{
+    background-image: url('../../assets/images/aboutus.jpeg');
+    height: 500px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.content
+{
+    top: 25%;
+    position: relative; 
+    /*position in center */
+}
+
+.content h1 
+{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+  
+}

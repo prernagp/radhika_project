@@ -1,0 +1,37 @@
+<div class="container mt-5 mb-5">
+    <h1>Contact Us</h1>
+  <form class="col-lg-8" #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+        <div class="row">
+            <div class="col-lg-6 mt-2 mb-2">
+                <input type ="name" required #name="ngModel" name="name" minlength="3" class="form-control" placeholder="Enter First Name" ngModel>
+                <span *ngIf="name.invalid && name.touched" style="color: red;">Please enter a valid input!</span>
+            </div>
+
+            <div class="col-lg-6 mt-2 mb-2">
+                <input type="lastname" required #lastname="ngModel" name="lastname" minlength="3" class="form-control" placeholder="Enter Last Name" ngModel >
+                <span *ngIf="lastname.invalid && lastname.touched" style="color: red;">Please enter a valid input!</span>
+            </div>
+
+            <div class="col-lg-12 mt-2 mb-2">
+                <input type="email" required #email="ngModel" name="email" email class="form-control" placeholder="Enter Email ID" ngModel>
+                <span *ngIf="email.invalid && email.touched" style="color: red;">Please enter a valid email id!</span>
+            </div>
+
+            <div class="col-lg-12 mt-2 mb-2">
+                <input type="phoneno" required #phoneno="ngModel" name="phoneno" pattern="[0-9]{10}" class="form-control" placeholder="Enter Phone Number" ngModel>
+                <span *ngIf="phoneno.invalid && phoneno.touched" style="color: red;">Please enter a valid Phone Number!</span>
+            </div>
+
+            <div class="col-lg-12 mt-2 mb-2">
+                <input type ="address" required #address="ngModel" name="address" class="form-control" placeholder="Enter Address" ngModel>
+                    <span *ngIf="address.invalid && address.touched" style="color: red;">Please enter a valid Address!</span>
+            </div>
+
+            <div class="col-lg-12 mt-3 mb-3">
+                <button class="btn btn-md btn-dark" [disabled]="loginForm.invalid">Submit</button>
+            </div>
+            
+        </div>
+    </form>
+</div>
+
